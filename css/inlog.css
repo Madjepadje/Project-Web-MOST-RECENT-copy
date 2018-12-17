@@ -1,0 +1,137 @@
+:root{
+    --transaviabruin: #ECDACB;
+    --wit: #FBF7F4;
+    --buttonroze: #FE3267;
+    --groen: #02D56D;
+	--blauw: #29009F;
+}
+/* BASIC OVERAL SETTINGS */
+body {                
+    margin: 0;
+    background-color: var(--transaviabruin);
+    font-family: Nexa;
+}
+
+body > header{
+    height: 4em; 
+    background-color: var(--wit);
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1em;
+}
+
+/* LOGO LINKS */
+
+body > header img {
+    height: 2em; 
+}
+
+/* NAVIGATIE MENU */
+header ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+/* GROOTTE */
+header ul li {
+    margin: 0 0.5em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    height: 30em;
+    border-radius: 1em;
+    width: 80%;
+    max-width: 30em;
+    background-color: rgba(255,255,255, 0.7);
+    margin-top: 2em;
+}
+main section header {
+    background-color: white; 
+    border-radius: 1em;
+}
+
+main section h1 {
+    color: var(--groen);
+    margin: 0.5em;
+    font-size: 2em;    
+}
+
+main section p {
+    margin: 1em;
+    
+}
+
+form {
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form button {
+    display: flex; 
+    justify-content: center; 
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.2em;
+	font-weight: 700;
+}
+
+input {
+    width: 100%;
+    height: 2em;
+    margin-bottom: 1em;
+	padding: 0 1em;
+	border: 1px solid black; 
+	border-radius: 0.5em; 
+	font-family: nexa; 
+	font-size: 1em;	
+}
+ 
+button {
+    width: 100%;
+    height: 3em;
+    border-radius: 1.25em; 
+    background-color: var(--buttonroze);
+    color: white;
+    font-size: 1em; 
+}
+
+@media (min-width: 48em) {
+
+   main {
+       display: flex; 
+       justify-content: center; 
+   
+   }
+
+   section{
+    display: flex; 
+    height: 10em;
+    border-radius: 1em;
+    width: 5em;
+    background-color: var(--wit);
+   }
+
+   body{
+       background-image: url(../img/Fontana_di_Trevi.jpg);
+       background-size: cover; 
+   }
+}
