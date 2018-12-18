@@ -1,3 +1,4 @@
+/* MOBILE FILTER UITKLAPPEN*/
 var filterbutton = document.querySelector('.filterbutton');
 var filtermenu = document.querySelector('.filters');
 var closebutton = document.querySelector('.filterknop');
@@ -15,8 +16,9 @@ closebutton.addEventListener('click', filteropen);
 
 
 
+/* ANIMATIE, BOEK TOEVOEGEN*/
 
-var button = document.querySelector('.paranoia img');
+var button = document.querySelector('.plus-button');
 var bookmark = document.querySelector('.bookmark');
 var bookmark1 = document.querySelector('.bookmark1');
 
@@ -30,7 +32,7 @@ button.addEventListener('click', rotate);
 
 
 
-
+/* MOODBAR NAVIGATIE*/
 var moodbutton = document.querySelector('.heavyFeels');
 var moodbutton2 = document.querySelector('.feelGood');
 var article1 = document.querySelector('.card');

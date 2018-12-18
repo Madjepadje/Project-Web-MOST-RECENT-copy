@@ -10,7 +10,6 @@ body {
 	margin: 0;
 	background-color: var(--transaviabruin);
     font-family: Nexa;
-    background-size:  
 }
 
 body > header {
@@ -57,9 +56,14 @@ body {
 }
 
 @media (min-width:48em) {
-    background-color: blue; 
+	body {
+		background-image: url(../img/ParaTablet.png);
+	}
+    
 }
 
 @media (min-width:64em){
-    background-image: url(../img/para.png);
+	body {
+		background-image: url(../img/para.png);
+	}
 }

@@ -6,7 +6,7 @@
 	--blauw: #29009F;
 }
 
-/* BASIC OVERAL SETTINGS */
+/* BASIC SETTING */
 
 
 body {
@@ -68,7 +68,7 @@ section nav {
 
 }
 
-
+/* MOODBAR NAVIGATIE */
 .feelGood {
 	background-color: var(--blauw);
 	color: var(--wit);
@@ -97,7 +97,7 @@ section nav {
 	animation: blue 1.5s forwards;
 }
 
-
+/* OVERVLOEIEN */
 @keyframes blue{
 	0%{
 		background-color: var(--wit);	
@@ -121,6 +121,8 @@ section nav {
 	animation: white 1.5s forwards;
 	color: black;
 }
+
+/* MOBIELE FILTER OPTIE */
 
 .filterbutton {
 	height: 4em;
@@ -179,21 +181,7 @@ section nav {
 	border-radius: 0.5em;	
 }
 
-/* @keyframe .filterknop {
-	0% {
-		transform: scale(1.0);
-		-webkit-transform: scale(1.0);
-	}
-	50%{
-		transform: scale(2.0);
-		-webkit-transform: scale(2.0);
-	}
-	100% {
-		transform: scale(3.0);
-		-webkit-transform: scale(3.0);
-	}
-} */
-
+/* animatie uitklappen */
 .menuanimation {
 	animation: menu 1s forwards;
 }
@@ -227,12 +215,7 @@ section nav {
 }
 
 
-
-
-
-.titel {
-	margin: 1em 0 0 0;
-}
+/* VERHALEN */
 
 section:nth-of-type(2) {
 	display: flex;
@@ -286,8 +269,6 @@ section article:nth-of-type(4) {
 	
 }
 
-
-
 section article header {
 	height: 4em;
 	width: auto;
@@ -300,8 +281,6 @@ section article header {
 	border-radius: 1em 1em 0 0;
 
 }
-
-
 
 section article header h2 {
 	margin: 0 0 0 1em;
@@ -340,30 +319,16 @@ section article footer h4 {
 	cursor: pointer;
 
 }
-
+/* BOOKMARK TOEGEVOEGD */
 .hidden {
 	opacity: 0;
 }
-
-/*
-section article footer button {
-    height: 3em;
-    width: 10em;
-    background-color: var(--buttonroze);
-    border-radius: 1em;
-    
-}
-*/
-
-/* FILTER OPTIE TRANSITION */
-
-/*ADD BUTTON VOOR ARTICLE*/
-
+/* VERHAAL TOEGEVOEGD AAN BOOKMARK LIJST */
 .plus-button {
 	transform: rotate(0deg);
 	transition: transform 400ms;
 }
-
+/* PLUS KNOP DRAAIT NAAR EEN X */
 .addbutton{
 	transform: rotate(45deg);
 }
@@ -377,8 +342,7 @@ section article footer button {
   }
 }
 
-
-
+/* Bookmark verschijnt */
 .hiddenanimation {
 	animation: hidden 2s forwards;
 }
@@ -404,7 +368,10 @@ section article footer button {
 	0% {
 		opacity: 0;
 	}
-	100% {
+	50% {
+		opacity: 0.5;
+	}
+	100%{
 		opacity: 1;
 	}
 }
