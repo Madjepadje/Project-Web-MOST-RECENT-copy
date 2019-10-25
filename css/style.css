@@ -13,6 +13,7 @@ body {
 	margin: 0;
 	background-color: var(--transaviabruin);
 	font-family: Nexa;
+	box-sizing: border-box;
 }
 
 body > header {
@@ -24,7 +25,6 @@ body > header {
 	display: flex;
 	align-items: center;
 	box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.2);
-
 }
 
 nav {
@@ -33,7 +33,6 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
 }
 
 .backgroundfilter{
@@ -47,9 +46,6 @@ body > header img {
 	margin: 0 0.5em;
 }
 
-
-
-
 /* NAVIGATIE MENU */
 
 header ul {
@@ -59,7 +55,6 @@ header ul {
 }
 
 /* SORTEER OPTIE  */
-
 section nav {
 	width: 100%;
 	margin-right: 1em;
@@ -97,7 +92,7 @@ section nav {
 	animation: blue 1.5s forwards;
 }
 
-/* OVERVLOEIEN */
+/* OVERVLOEIEN van de moods */
 @keyframes blue{
 	0%{
 		background-color: var(--wit);	
@@ -123,7 +118,6 @@ section nav {
 }
 
 /* MOBIELE FILTER OPTIE */
-
 .filterbutton {
 	height: 4em;
 	width: 10em;
@@ -287,7 +281,7 @@ section article header h2 {
 	padding: 0;
 	align-self: center;
 }
-
+ 
 section article header img {
 	height: 2.3em;
 	margin: 0 1em 0 0;
@@ -311,13 +305,16 @@ section article footer img {
 
 }
 
+section article footer a {
+	text-decoration: none;
+}
+
 section article footer h4 {
 	padding: 0.6em;
 	background-color: var(--buttonroze);
 	color: white;
 	border-radius: 1em;
 	cursor: pointer;
-
 }
 /* BOOKMARK TOEGEVOEGD */
 .hidden {
@@ -513,10 +510,7 @@ section article footer h4 {
 	section article:nth-of-type(1) {
 		grid-column-start: 2;
 		grid-row-start: 2;
-
-
 	}
-
 
 	section article:nth-of-type(2) {
 		grid-column-start: 4;

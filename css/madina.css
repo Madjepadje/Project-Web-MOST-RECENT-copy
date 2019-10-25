@@ -1,0 +1,101 @@
+:root {
+	--transaviabruin: #ECDACB;
+	--wit: #FBF7F4;
+	--buttonroze: #FE3267;
+	--groen: #02D56D;
+	--blauw: #29009F;
+}
+/* BASIC SETTINGS */
+body {
+	margin: 0;
+	background-color: var(--transaviabruin);
+	font-family: Nexa;
+	box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+img svg{
+    fill: var(--groen);
+}
+body > header {
+	height: 4em;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	background-color: var(--wit);
+	display: flex;
+	align-items: center;
+	box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.2);
+}
+header nav {
+	width: 100%;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: sticky;
+}
+body > header img {
+	height: 1.7em;
+    margin: 0 0.5em;
+}
+header ul {
+	display:flex; 	 
+}
+
+/* Illegale manier van SVG kleuren in een IMG te veranderen */
+.icon{
+	filter: invert(0.4) sepia(1) opacity(100%) saturate(5.5) hue-rotate(69deg) brightness(1.2);
+}
+.icon:hover{
+	cursor: pointer;
+	filter: invert(0.4) sepia(1) saturate(16.7) hue-rotate(226.8deg) brightness(0.5);
+}
+
+/*  verhalen */
+main {
+	background: url(../img/Fontana_di_Trevi.jpg) center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 40em;
+	position: absolute;
+}
+section {
+	margin: 2em auto;
+	width: 40vh;
+	height: 10em;
+	background-color: white;
+	border-radius: 1em; 
+	border: 1px solid red;
+	padding: 1em;
+}
+h2 {	
+	margin: 0 .5em;
+	color: var(--groen);
+	font-size: 1.5em;
+	position: relative;
+}
+section > nav {
+	display: flex;
+	justify-content: center;
+	margin: 1em auto;
+}
+
+nav button:nth-of-type(1) {
+	width: 10em;
+	height: 5em;
+  	background-color: var(--blauw);
+  	color: white;
+	border-radius: 2em 0 0 2em;
+	z-index: 1;
+}
+
+nav button:nth-of-type(2) {
+	margin-left: -0.5em;
+	width: 10em;
+	height: 5em;
+  	padding: 1em 2em;
+	border-radius: 0 2em 2em 0;
+}
