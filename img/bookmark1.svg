@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="201px" height="346px" viewBox="0 0 201 346" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>bookmark</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bookmark">
+            <path d="M32.7,0 L32.7,0.2 L168.7,0.2 C177.2,0.2 185.3,3.6 191.3,9.6 C197.3,15.5 200.7,23.6 200.7,32 L200.7,32 L200.7,317.8 C200.9,324.8 198.7,331.7 194.4,337.2 C188.3,344.9 177.8,347.7 168.7,344 C160.7,340.5 154.1,334.4 149.8,326.8 L149.8,326.8 L100.7,248.5 L51.6,326.8 C47.3,334.5 40.7,340.5 32.7,344 C23.6,347.7 13.1,344.9 7.1,337.2 C2.8,331.6 0.6,324.8 0.7,317.8 L0.7,317.8 L0.7,32 C0.7,23.5 4.1,15.4 10.1,9.4 C16.1,3.4 24.2,0 32.7,0 L32.7,0 Z" id="Shape" fill="#02D56D" fill-rule="nonzero"></path>
+            <text id="1" font-family="Nexa-XBold, Nexa" font-size="120" font-weight="bold" letter-spacing="-5.73333316" fill="#FFFFFF">
+                <tspan x="76" y="173">1</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

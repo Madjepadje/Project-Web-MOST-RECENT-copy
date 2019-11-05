@@ -1,165 +1,175 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Project Web</title>
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Transavia - verhalenwebsite</title>
 </head>
-
 <body>
-	<!-- NAVIGATIE BALK -->
-	<header>
-		<nav>
-			<a href="index.html">
-               <img src="img/logo.png" alt="Transavia Logo">
-           </a>
-			<ul>
-				<li>
-					<img src="img/bookmark.svg" class="bookmark" alt="">
-					<img src="img/bookmark1.png" class=" hidden hiddenanimation bookmark1" alt="">
-				</li>
-				<li>
-						<a href="inlog.html">
-					<img src="img/user.svg" alt=""></a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	
-	<section>
-		<!--MOODBAR NAV-->
-		<nav>
-			<button class="feelGood">Feel Good</button>
-			<button class="heavyFeels">Heavy Feels</button>
-		</nav>
-		<!--MOBILE FILTEROPTIE-->
-		<button class="filterbutton" class="hidden">
-			<img class="funnel" src="img/funnel.png" alt="">
-		</button>
-
-		<section class="filters hidden">
-			<button class="filterknop ">
-			X</button>
-			<h2>Filters:</h2>
-			<div class="filtersoptie">
-				<ul>
-					<li>
-						<h3>
-							Populaire verhalen
-						</h3>
-					</li>
-					<li>
-						<h3>
-							Alfabetisch
-						</h3>
-					</li>
-					<li>
-						<h3>Meest gelezen verhalen</h3>
-					</li>
-				</ul>
-			</div>
-		</section>
-	</section>
-	
-	<div class="container"></div>
-	<!--TABLET OF DESKTOP FILTER OPTIES-->
-	<div class="backgroundfilter">
-		<div>
-			<header>
-				<h1>Wat wil je lezen?</h1>
-			</header>
-			<form action="">
-				<label for="checkbox">
-			<input type="checkbox" name="Populaire verhalen" value="populaire verhalen">Populaire verhalen</label><br><br>
-				<label for="checkbox">
-			<input type="checkbox" name="Alfabetisch" value="Alfabetisch">Alfabetisch</label><br><br>
-				<label for="checkbox">
-			<input type="checkbox" name="Meest gelezen verhalen" value="Meest gelezen verhalen">Meest gelezen verhalen</label><br>
-			</form>
-			<nav>
-				<button id="feelGood">Feel Good</button>
-				<button id="heavyFeels">Heavy Feels</button>
-			</nav>
-			<button id="zoeken">Zoeken</button>
-		</div>
-	</div>
-	
-<!--VERHALEN-->
-
-	<section>
-		<!-- PARANOIA-->
-		<article class="card">
-			<header class="paranoia">
-				<h2>
-					Paranoia
-				</h2>
-				<img class="plus-button" src="img/Icon_plus.png" alt="">
-			</header>
-
-
-			<footer>
-				<img src="img/heart1.png" alt="">
-				<p>113</p>
-				<img class="hidden" src="img/heart2.png" alt="">
-				<a href="paranoia.html">
-					<h4>Lees verder</h4></a>
-			</footer>
-		</article>
-		<!--       LETTERLIJK -->
-		<article>
-			<header>
-				<h2>
-					Letterlijk
-				</h2>
-				<img class="plus-button" src="img/Icon_plus.png" alt="">
-			</header>
-
-			<footer>
-				<img src="img/heart1.png" alt="">
-				<a href="letterlijk.html">
-					<h4>Lees verder</h4></a>
-			</footer>
-		</article>
-		<!--       GEFRUSTREERD-->
-		<article class="card">
-			<header>
-				<h2>
-					Gefrustreerd
-				</h2>
-				<img class="plus-button" src="img/Icon_plus.png" alt="">
-			</header>
-
-			<footer>
-				<img src="img/heart1.png" alt="">
-				<a href="gefrustreerd.html">
-				<h4>Lees verder</h4></a>
-			</footer>
-		</article>
-
-			<!--   Verrassing-->
-				<article>
-					<header class="paranoia">
-						<h2>
-							verrassing
-						</h2>
-						<img class="plus-button" src="img/Icon_plus.png" alt="">
-					</header>
-		
-		
-					<footer>
-						<img src="img/heart1.png" alt="">
-						<p>113</p>
-						<img class="hidden" src="img/heart2.png" alt="">
-						<h4>Lees verder</h4>
-						<!--                <button>Click</button>-->
-					</footer>
-				</article>
-	</section>
-	
-	<script src="js/script.js"></script>
+    <!-- header -->
+    <header> 
+        <nav>
+             <a href="index.html">
+                    <img src="img/logo.png" alt="Transavia Logo"></a>
+                <ul>
+                    <li>
+                        <a href="#">
+                        <img src="img/bookmark.svg" class="icon bookmark" alt="readlist">
+                        <img src="img/bookmark1.png" class=" hidden hiddenanimation bookmark1" alt=""><span>leeslijst</span></a>
+                    </li>
+                    <li>
+                        <a href="inlog.html">
+                        <img src="img/user.svg" class="icon user" alt="signin"><span>Inloggen</span></a>
+                    </li>
+                </ul>
+        </nav>
+        <h1>99 verhalen voor op reis!</h1>
+         <section>
+            <h2>Wat is jouw mood?</h2>
+            <nav>
+                <button class="mood-button active" id="feel-good">Feel good</button>
+                <button class="mood-button" id="thrilling-feel">Thrilling vibes</button>
+            </nav>
+            <a href="#">resultaten</a>
+        </section>
+    </header>  
+    <!-- main content -->  
+    <main>
+    <!-- SECTION 1 mood: good_heavy  --> 
+        <section>
+                <h3>Feel good verhalen</h3>
+                <article class="card feel-good">
+                   <header>
+                           <h3>Paranoia</h3>
+                           <img src="img/Icon_plus.png" alt="addStory" class="plus-button">
+                       </header>
+                       <footer>
+                           <img src="img/heart1.png" alt="like">
+                           <a href>lees verder</a>
+                       </footer>
+                   </article>
+                   <article class="card thrilling-feel">
+                       <header>
+                           <h3>Letterlijk</h3>
+                           <img src="img/Icon_plus.png" alt="addStory">
+                       </header>
+                       <footer>
+                           <img src="img/heart1.png" alt="like">
+                           <a href>lees verder</a>
+                       </footer>
+                   </article>
+                   <article class="card feel-good">
+                       <header>
+                           <h3>Gefrustreerd</h3>
+                           <img src="img/Icon_plus.png" alt="addStory">
+                       </header>
+                       <footer>
+                           <img src="img/heart1.png" alt="like">
+                           <a href>lees verder</a>
+                       </footer>
+                   </article>
+                   <article class="card thrilling-feel">
+                       <header>
+                           <h3>Paranoia</h3>
+                           <img src="img/Icon_plus.png" alt="addStory">
+                       </header>
+                       <p>basic info over verhaal</p>
+                       <footer>
+                           <img src="img/heart1.png" alt="like">
+                           <a href>lees verder</a>
+                       </footer>
+                   </article>
+                   <article class="card feel-good">
+                       <header>
+                           <h3>Letterlijk</h3>
+                           <img src="img/Icon_plus.png" alt="addStory">
+                       </header>
+                       <footer>
+                           <img src="img/heart1.png" alt="like">
+                           <a href>lees verder</a>
+                       </footer>
+                   </article>
+                   <article class="card thrilling-feel">
+                       <header>
+                           <h3>Gefrustreerd</h3>
+                           <img src="img/Icon_plus.png" alt="addStory">
+                       </header>
+                       <footer>
+                           <img src="img/heart1.png" alt="like">
+                           <a href>lees verder</a>
+                       </footer>
+                   </article>
+                   <article class="card thrilling-feel">
+                    <header>
+                        <h3>Paranoia</h3>
+                        <img src="img/Icon_plus.png" alt="addStory">
+                    </header>
+                    <footer>
+                        <img src="img/heart1.png" alt="like">
+                        <a href>lees verder</a>
+                    </footer>
+                </article>
+                <article class="card feel-good">
+                    <header>
+                        <h3>Letterlijk</h3>
+                        <img src="img/Icon_plus.png" alt="addStory">
+                    </header>
+                    <footer>
+                        <img src="img/heart1.png" alt="like">
+                        <a href>lees verder</a>
+                    </footer>
+                </article>
+                <article class="card thrilling-feel">
+                    <header>
+                        <h3>Gefrustreerd</h3>
+                        <img src="img/Icon_plus.png" alt="addStory">
+                    </header>
+                    <footer>
+                        <img src="img/heart1.png" alt="like">
+                        <a href>lees verder</a>
+                    </footer>
+                </article>
+        </section>
+    <!-- SECTION 2 mood: READ_on / -->
+        <section>
+            <h3>Verder lezen?</h3>
+            <article>
+                <header>
+                    <h3>Paranoia</h3>
+                </header>
+                <div class="timetable"><div class="progress"> </div></div>
+                <footer>
+                    <img src="img/heart1.png" alt="like">
+                    <a href>lees verder</a>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h3>Letterlijk</h3>
+                </header>
+                <div class="timetable"><div class="progress"> </div></div>
+                <footer>
+                    <img src="img/heart1.png" alt="like">
+                    <a href>Gefrustreerd</a>
+                </footer>
+            </article>
+            <article>
+                    <header>
+                        <h3>verhaaltitel</h3>
+                    </header>
+                    <div class="timetable"><div class="progress"> </div></div>
+                    <footer>
+                        <img src="img/heart1.png" alt="like">
+                        <a href>lees verder</a>
+                    </footer>
+                </article>
+        </section> 
+        <footer>
+                <p>Transavia 2019 - Madina Rauf</p>
+        </footer>
+    </main>
+    <script src="js/script.js"></script>
 </body>
-
 </html>

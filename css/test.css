@@ -1,0 +1,338 @@
+:root {
+	--transaviabruin: #ECDACB;
+	--wit: #FBF7F4;
+	--buttonroze: #FE3267;
+	--groen: #02D56D;
+	--blauw: #29009F;
+}
+
+/* BASIC SETTINGS */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	font-family: Nexa;
+	text-decoration: none;
+}
+
+body{
+	background-color: var(--transaviabruin);
+
+}
+
+/* PRIMARY NAVIGATION BAR */
+header > nav {
+	height: 4em;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	background-color: var(--wit);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.2);
+	position: fixed;
+}
+header > nav > ul {
+    display: flex;
+    list-style-type: none; 	 
+}
+header > nav > a > img {
+	height: 1.8em;
+	margin: 0.5em;
+}
+header > nav > ul > li> a{
+	margin: 0 .5em;
+}
+header > nav > ul > li > a > span{
+	display: inline-block;
+	overflow: hidden;
+	text-indent: -9999em;
+}
+
+header > nav > ul > li > a > img {
+	height: 1.8em;
+}
+
+/* Illegale manier van SVG kleuren in een IMG te veranderen */
+.icon{
+	filter: invert(0.4) sepia(1) opacity(100%) saturate(5.5) hue-rotate(69deg) brightness(1.2);
+}
+/* .icon:hover{
+	cursor: pointer;
+	filter: invert(0.4) sepia(1) saturate(16.7) hue-rotate(226.8deg) brightness(0.5);
+ } */
+
+/* achtergrond header */
+header {
+	background-image: url(../img/Fontana_di_Trevi.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 20em;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+h2 {	
+	margin: .5em .5em;
+	color: var(--groen);
+	font-size: 1.5em;
+}
+/* witte mood op home */
+header > section {
+	background-color: rgba(255,255,255, 0.9);
+	width: 50vh;
+	height: 12em;
+	border-radius: 1em; 
+	margin-top: 4em;
+	align-self: center;
+	display: flex; 
+	flex-direction: column;
+	justify-content: center;
+}
+header > section > a {
+	background-color: var(--buttonroze);
+	padding: 0.7em;
+	border-radius: 1.5em;
+	color: var(--wit);
+	font-weight: bold;
+	margin: 0 1em 0 0;
+	text-decoration: none;
+	width: 6em;
+}
+
+header > section > nav {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin: 1em auto;
+}
+/*  de moodbar buttons */
+button {
+	font-weight: bold;
+	font-size: .8em;
+}
+
+nav button:nth-of-type(1) {
+	width: 10em;
+	height: 4em;
+  	background-color: var(--blauw);
+  	color: var(--wit);
+	border-radius: 1em 0 0 1em;
+	z-index: 1;
+}
+
+nav button:nth-of-type(2) {
+	margin-left: -0.5em;
+	width: 10em;
+	height: 4em;
+	border-radius: 0 1em 1em 0;
+}
+
+section article {
+	margin: 2em auto;
+	width: 45vh;
+	height: 10em;
+	background-color: white;
+	border-radius: 1em; 
+	padding: 1em;
+	position: absolute;
+}
+
+/* MAIN ELEMENTEN */
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* titel van section */
+main > h3 {
+	color: var(--blauw);
+	margin-top: 1em;
+}
+
+main > header {
+	background-image: none;
+	height: 2em;
+	display: flex; 
+	justify-content: flex-start;
+	margin: 2em auto auto 5em;
+	color: var(--blauw);
+}
+/* VERHALEN */
+main > article {
+	height: 20em;
+	width: 20em;
+	margin: 1em;
+	border-radius: 1em;
+	display: flex; 
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+main > article > header {
+	background-color: var(--groen);
+	background-image: none;
+	height: 4em;
+	width: auto;
+	display: flex;
+	justify-content: space-between;
+	top: 0;
+	border-radius: 1em 1em 0 0;
+}
+
+article > header > h3 {
+	margin: 0 0 0 1em;
+	color:var(--wit);
+	padding: 0;
+	align-self: center;
+}
+
+article > header > img {
+	width: 2em;
+	height: 2em;
+	margin: 1em 1em 0 0;
+}
+article p {
+	margin: 0 0 0 1em;
+	color: var(--wit);
+	font-weight: bold;
+	text-shadow: .1em .1em #000;
+}  
+
+article > footer > img {
+	height: 1.5em;
+	margin: 0 0 0 1em;
+}
+article > footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--wit);
+	height: 3em;
+	border-radius: 0 0 1em 1em;
+}
+article > footer > a {
+	background-color: var(--buttonroze);
+	padding: 0.7em;
+	border-radius: 1.5em;
+	color: var(--wit);
+	font-weight: bold;
+	margin: 0 1em 0 0;
+	text-decoration: none;
+}
+
+/* INLADEN AFBEELDINGEN VOOR VERHALEN*/
+main article:nth-of-type(1){
+	background-image: url(../img/paranoia_vh.png);
+	background-size: cover;
+}
+
+main article:nth-of-type(2){
+	background-image: url(../img/paranoia.png);
+	background-size: cover;
+}
+
+main article:nth-of-type(3){
+	background-image: url(../img/letterlijk.png);
+	background-size: cover;
+}
+main article:nth-of-type(4){
+	background-image: url(../img/paranoia_vh.png);
+	background-size: cover;
+}
+
+main article:nth-of-type(5){
+	background-image: url(../img/paranoia.png);
+	background-size: cover;
+}
+
+main article:nth-of-type(6){
+	background-image: url(../img/letterlijk.png);
+	background-size: cover;
+}
+
+footer{
+	background-color: var(--groen);
+	height: 3em;
+	color: var(--wit);
+	display: flex;
+	justify-content: center;;
+}
+
+footer > p {
+	margin: 1em 0;
+}
+
+
+/**********************************/
+			/* TABLET */
+/**********************************/
+@media (min-width: 48em) { 
+	header {
+		height: 30em;
+	}
+	header > section {
+		height: 18em;
+
+	}
+	
+	header > nav > ul > li > a > span {
+		display: block;
+		overflow: visible;
+		text-indent: .1em;
+		color: var(--groen);
+	}
+
+	header > nav > ul {
+		display: flex;
+		flex-direction: row;
+	}
+	header > nav > ul > li > a{
+		margin: 0 1em;
+	}
+	ul > li > a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 4em;
+	}
+
+	header > nav > ul li:hover {
+		background-color: var(--blauw);
+	}
+
+	/* TABLET - GRID 2 KOLOMMEN*/
+	main {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1em;
+		grid-template-rows: 3em auto auto;
+		justify-items: center;
+	} 
+	gj
+	main > h3{
+		grid-column: 1/2;
+		justify-self: start;
+		margin-left: 2em;	
+	}
+	
+}
+	
+
+ /*		DESKTOP	 	*/
+@media (min-width: 64em) {
+	/* DESKTOP GRID - 3 KOLOMMEN*/
+	main {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto auto ;
+	}
+	main > h3 {
+		grid-column: 1/4;
+	}
+	
+
+
+	}

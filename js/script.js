@@ -1,21 +1,3 @@
-/* MOBILE FILTER UITKLAPPEN*/
-var filterbutton = document.querySelector('.filterbutton');
-var filtermenu = document.querySelector('.filters');
-var closebutton = document.querySelector('.filterknop');
-
-
-function filteropen() {
-	filtermenu.classList.toggle('hidden');
-	filterbutton.classList.toggle('hidden');
-	filtermenu.classList.toggle('menuanimation');
-}
-
-filterbutton.addEventListener('click', filteropen);
-closebutton.addEventListener('click', filteropen);
-
-
-
-
 /* ANIMATIE, BOEK TOEVOEGEN*/
 
 var button = document.querySelector('.plus-button');
@@ -30,25 +12,57 @@ function rotate() {
 
 button.addEventListener('click', rotate);
 
-
-
 /* MOODBAR NAVIGATIE*/
-var moodbutton = document.querySelector('.heavyFeels');
-var moodbutton2 = document.querySelector('.feelGood');
-var article1 = document.querySelector('.card');
+// var moodbutton = document.querySelector('.heavyFeels');
+// var moodbutton2 = document.querySelector('.feelGood');
+// var article1 = document.querySelectorAll('.card');
 
+// function mood() {
+// 	article1.forEach(card => {
+// 		card.classList.add('hidden');
+// 	})
+// 	moodbutton.classList.add('blue');
+// 	moodbutton2.classList.add('white');
+// }
 
-function mood() {
-	article1.classList.toggle('hidden');
-	moodbutton.classList.toggle('blue');
-	moodbutton2.classList.toggle('white');
+// function mood2() {
+// 	moodbutton.classList.toggle('blue');
+// 	moodbutton2.classList.toggle('white');
+// }
+
+// moodbutton.addEventListener('click', mood);
+// moodbutton2.addEventListener('click', mood2);
+
+/* MOODBAR - hulp */
+function showCards() {
+	var currentActive = document.querySelector('.mood-button.active').getAttribute('id')
+	var cards = document.querySelectorAll('.card')
+
+	cards.forEach(card => {
+		if (!card.getAttribute('class').includes(currentActive)) {
+			card.classList.add('hidden')
+		} else {
+			card.classList.remove('hidden')
+		}
+	})
 }
 
-function mood2() {
-	moodbutton.classList.toggle('blue');
-	moodbutton2.classList.toggle('white');
-}
+var moodButtons = document.querySelectorAll('.mood-button')
 
-moodbutton.addEventListener('click', mood);
-moodbutton2.addEventListener('click', mood2);
+moodButtons.forEach(button => {
+	button.addEventListener('click', function() {
+		console.log(this);
 
+		if(this.getAttribute('class').includes('active')) {
+			// If button is already active, do nothing.
+			return
+		}
+
+		document.querySelector('.mood-button.active').classList.remove('active')
+		this.classList.add('active')
+
+		showCards()
+	})
+})
+
+showCards()
