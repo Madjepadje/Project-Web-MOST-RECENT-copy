@@ -33,7 +33,8 @@ button.addEventListener('click', rotate);
 // moodbutton.addEventListener('click', mood);
 // moodbutton2.addEventListener('click', mood2);
 
-/* MOODBAR - hulp */
+/* MOODBAR - hulp van GIJS LAARMAN*/
+/* functie aangemaakt om kaarten te zien. variablen pakt classes uit HTML*/ 
 function showCards() {
 	var currentActive = document.querySelector('.mood-button.active').getAttribute('id')
 	var cards = document.querySelectorAll('.card')
